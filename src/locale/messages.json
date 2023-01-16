@@ -1,0 +1,11 @@
+{
+  "locale": "en-US",
+  "translations": {
+    "8286437328803353698": "for test sample-component works!",
+    "1586441093982144361": " for dates like {$INTERPOLATION} use pipe",
+    "8230667035758312692": " for currencies like {$INTERPOLATION} use pipe",
+    "3271070469815256851": " for test of images",
+    "4323851768315885124": "just me",
+    "1737753151350322492": "{$PH}"
+  }
+}

@@ -4,6 +4,10 @@
   "newProjectRoot": "projects",
   "projects": {
     "101-angular-internacinalization": {
+      "i18n":{
+        "sourceLocale":"en-US",
+        "locales": {"es-ES":"src/locale/messages.es.json"}
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,6 +21,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize":["es-ES"],
             "outputPath": "dist/101-angular-internacinalization",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -28,6 +33,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -96,6 +102,7 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []

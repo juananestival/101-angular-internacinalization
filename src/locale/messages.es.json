@@ -1,0 +1,11 @@
+{
+  "locale": "es-ES",
+  "translations": {
+    "8286437328803353698": "el componente funciona!",
+    "1586441093982144361": " para fechas {$INTERPOLATION} uara  pipes",
+    "8230667035758312692": " para monedas como {$INTERPOLATION} uar pipe",
+    "3271070469815256851": " para text bajo las imagenes",
+    "4323851768315885124": "yo",
+    "1737753151350322492": "{$PH}"
+  }
+}

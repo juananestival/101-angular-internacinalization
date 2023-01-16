@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a i18n class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a i18n class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a i18n class="dropdown-item" href="#">Task 1</a>
+            <a i18n class="dropdown-item" href="#">Task 2</a>
+            <div class="dropdown-divider"></div>
+            <a i18n class="dropdown-item" href="#">Task 3</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input i18n-placeholder class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button i18n class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  
+        <select (change)="changePath(selectedLocale)" class="form-control" style="width:50%;" ngModel="selectedLocale" name="selectedLocale">
+          <option [value]="locale.code" *ngFor="let locale of locales">
+      {{locale.name}}
+          </option>
+        </select>
+      </form>
+  
+    </div>
+  </nav>
